@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp"
+    app:cardBackgroundColor="@color/MesajIstekleriItemBgColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="77dp"
+            android:id="@+id/gelen_mesaj_istekleri_item_imgProfil"
+            android:layout_height="77dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/MesajIsteklerItemCivBgColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/gelen_mesaj_istekleri_item_txtMesaj"
+            android:layout_marginLeft="5dp"
+            android:textColor="#111111"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toLeftOf="@+id/gelen_mesaj_istekleri_item_linear"
+            android:layout_toRightOf="@+id/gelen_mesaj_istekleri_item_imgProfil"
+            android:text="Test Kullanıcısı Sana Mesaj Göndermek İstiyor"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/gelen_mesaj_istekleri_item_linear"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="43dp"
+                android:id="@+id/gelen_mesaj_istekleri_item_imgIptal"
+                android:src="@drawable/ic_close"
+                android:layout_height="43dp"
+                app:tint="#DF4040"/>
+
+            <ImageView
+                android:layout_width="43dp"
+                android:id="@+id/gelen_mesaj_istekleri_item_imgOnayla"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/ic_check"
+                android:layout_height="43dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

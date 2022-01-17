@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:visibility="invisible"
+            android:id="@+id/chat_item_imgProfil"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#30FF00"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:padding="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="17sp"
+            android:text="sadadadasdadsadas"
+            android:textStyle="bold"
+            android:textColor="@color/ChatBgTextColor"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/chat_item_bg_right"
+            android:id="@+id/chat_item_txtMesaj"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/chat_item_imgResim"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/chat_item_bg_right"
+            android:padding="8dp" />
+
+        <ProgressBar
+            android:layout_width="55dp"
+            android:layout_alignRight="@+id/chat_item_imgResim"
+            android:layout_alignLeft="@+id/chat_item_imgResim"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:indeterminateTint="#FFFFFF"
+            android:id="@+id/chat_item_progress"
+            android:layout_height="55dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

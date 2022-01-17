@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ChatActivityBgColor"
+    tools:context=".View.ChatActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#FF80AB"
+        android:id="@+id/chat_activity_toolbar"
+        android:padding="8dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/chat_activity_imgHedefProfil"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="test"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:id="@+id/chat_activity_txtHedefIsim"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/chat_activity_imgHedefProfil"
+                android:layout_alignTop="@+id/chat_activity_imgHedefProfil"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:src="@drawable/ic_close"
+                android:onClick="btnChatKapat"
+                android:id="@+id/chat_activity_imgKapat"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_activity_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_activity_relaBottom"
+        android:layout_below="@+id/chat_activity_toolbar"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/ChatActivityBottomBgColor"
+        android:padding="10dp"
+        android:id="@+id/chat_activity_relaBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:src="@drawable/ic_galeri"
+            android:layout_centerVertical="true"
+            android:onClick="btnGaleridenResimGonder"
+            android:id="@+id/chat_activity_imgGaleri"
+            android:background="@drawable/chat_img_bg"
+            android:layout_height="35dp"
+            app:tint="#FFFFFF"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Bir mesaj yazınız"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/chat_activity_editMesaj"
+            android:layout_toLeftOf="@+id/chat_activity_imgMesajGonder"
+            android:layout_toRightOf="@+id/chat_activity_imgGaleri"
+            android:background="@color/ChatActivityBottomBgColor"
+            android:layout_height="50dp"/>
+
+        <ImageButton
+            android:id="@+id/chat_activity_imgMesajGonder"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_send"
+            android:onClick="btnMesajGonder" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

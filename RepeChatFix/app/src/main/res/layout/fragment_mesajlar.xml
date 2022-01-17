@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MesajlarFragmentBgColor"
+    tools:context=".Fragment.MesajlarFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mesajlar_fragment_mesajlar_linear"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:background="#c94f7c"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="MESAJLAR"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:background="@color/MesajlarFragmentRecyclerColor"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/mesajlar_fragment_mesajlar_linear"
+        android:id="@+id/mesajlar_fragment_recyclerView"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

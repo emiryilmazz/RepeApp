@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_item_imgProfil"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="3dp"
+        app:civ_border_color="#0A7A70"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/chat_item_txtMesaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/chat_item_imgProfil"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/chat_item_imgProfil"
+        android:background="@drawable/chat_item_bg_left"
+        android:padding="8dp"
+        android:textColor="@color/ChatBgTextColor"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/chat_item_imgResim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@id/chat_item_imgProfil"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/chat_item_imgProfil"
+        android:background="@drawable/chat_item_bg_left"
+        android:padding="8dp" />
+
+    <ProgressBar
+        android:id="@+id/chat_item_progress"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/chat_item_imgResim"
+        android:layout_alignRight="@+id/chat_item_imgResim"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:indeterminateTint="#000000" />
+
+</RelativeLayout>

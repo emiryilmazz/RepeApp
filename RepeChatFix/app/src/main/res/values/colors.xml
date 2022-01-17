@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#1E1E1E</color>
+    <color name="colorAccent">#FDFDFD</color>
+
+    <!-- Bar Layout Renkler -->
+    <color name="BarTextColor">#c94f7c</color>
+
+    <!-- Kayit Ol Acitivty Renkler -->
+    <color name="KayitOlTextColor">#c94f7c</color>
+    <color name="KayitOlBtnTextColor">#c94f7c</color>
+    <color name="KayitOlBgColor">#ffb2dd</color>
+
+    <!-- Main Activity Renkler -->
+    <color name="BottomViewSecilenRenk">#c94f7c</color>
+    <color name="BottomViewSecilmeyenRenk">#ffb2dd</color>
+    <color name="BottomBgColor">#FF80AB</color>
+    <color name="MainBgColor">#ffb2dd</color>
+
+    <!-- Custom Dialog Mesaj Gonder Renkler-->
+    <color name="MesajGonderCerceveRenk">#333333</color>
+    <color name="MesajGonderBtnResimRenk">#FFFFFF</color>
+    <color name="MesajGonderBtnYaziRenk">#FFFFFF</color>
+    <color name="MesajBgColor">#212121</color>
+    <color name="MesajGonderTxtRenk">#FFFFFF</color>
+
+    <!-- Chat Bg Renkleri -->
+    <color name="ChatBgLeftColor">#CFCFCF</color>
+    <color name="ChatBgRightColor">#333333</color>
+    <color name="ChatBgTextColor">#FFFFFF</color>
+
+    <!-- Chat Activity Renkler -->
+    <color name="ChatActivityBgColor">#ffb2dd</color>
+    <color name="ChatActivityBottomBgColor">#c94f7c</color>
+    
+    <!-- Mesaj Istekleri Renkler -->
+    <color name="MesajIstekleriBgColor">#FF80AB</color>
+    <color name="MesajIstekleriRecyclerColor">#ffb2dd</color>
+
+    <!-- Kullanicilar Fragment Renkler -->
+    <color name="KullanicilarFragmentBgColor">#ffb2dd</color>
+    
+    <!-- Kullanici Item Renkler -->
+    <color name="KullaniciItemCivBgColor">#212121</color>
+    <color name="KullaniciItemBgColor">#FF80AB</color>
+
+    <!-- Mesajlar Fragment Renkler -->
+    <color name="MesajlarFragmentBgColor">#FF80AB</color>
+    <color name="MesajlarFragmentRecyclerColor">#ffb2dd</color>
+
+    <!-- Mesajlar Item Renkler -->
+    <color name="MesajlarItemBgColor">#FF80AB</color>
+    <color name="MesajlarItemCivColor">#333333</color>
+
+    <!-- Profil Fragment Renkler -->
+    <color name="ProfilFragmentBgColor">#FF80AB</color>
+    <color name="ProfilFragmentCivColor">#333333</color>
+    <color name="ProfilFragmentTextColor">#c94f7c</color>
+
+    <!-- Mesaj Istekleri Item Renkler -->
+    <color name="MesajIsteklerItemCivBgColor">#212121</color>
+    <color name="MesajIstekleriItemBgColor">#FF80AB</color>
+</resources>
